@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<!-- <div id="content">
+		<p><img id="loading" src="imagenes/loading_dancing.gif" width="150px" height="150px">Sea paciente y no fastidie</p>
+	</div> -->
+	<section class="section1">
+		<h1>1. Cambiar pagina de colores</h1>
+		<div class="div_colores rojo"></div>
+		<div class="div_colores verde"></div>
+		<div class="div_colores azul"></div>
+		<div class="div_colores rosado"></div>
+		<div class="div_colores amarillo"></div>
+		<div class="div_colores blanco"></div>
+	</section>
+	<section >
+		<div class="medio_contenedor">
+			<h1>2. agregar elementos de manera dinamica a travez de un formulario</h1>
+				<div class="grupo_formu">
+					<label for="label">nombre para el elemento</label>
+					<input name="label" type="text" placeholder="Ingrese un nombre"></input>
+				</div>
+				<div class="grupo_formu">
+					<label for="elemnto">elementos</label>
+					<select id="elemento" required="" name="elemeneto">
+					    <option value="">Selecione Un elemento</option>
+					    <option value="1">Img</option>
+					    <option value="2">Select</option>
+					    <option value="3">Div</option>
+					</select>
+				</div>
+				<button type="input" class="ejecutar" >Ejecutar</button>
+		</div>
+		<div class="elementos_ingresados">	
+		</div>
+	</section>
+	<section >
+		<h1>3. aplicar animaciones a los objetos de una pagina</h1>
+		<label for="tiempo">Tiempo para animaciones en segundos</label>
+		<input name="tiempo" type="text" placeholder="Ingrese tiempo"></input>
+		<button class='leer_num'>Agregar</button>
+		<div class="circulo azul borde"></div>
+		<div class="animaciones">
+			<h2>animaciones: show, hide y toggle</h2>
+			<span>sin tiempo: </span>
+	      	</br>
+			<button id='show'>mostrar</button>
+		    <button id='hide'>ocultar</button>
+		    <button id='toggle'>indeterminado</button>
+		    </br>
+		    <span>con tiempo dado: </span>
+	      	</br>
+		    <button id='showSpeed'>mostrar</button>
+	        <button id='hideSpeed'>ocultar</button>
+	        <button id='toggleSpeed'>indeterminado</button>
+	        </br>
+			<h2>animaciones: fadein, fadeout y fadeto</h2>
+		    <span>con tiempo dado: </span>
+	        </br>
+	        <button id='fadein'>Aparecer</button>
+            <button id='fadeout'>Desvanecer</button>
+            <button id='fadeto'>Desvanecer a 0.3</button>
+            <button id='fadeto1'>Aparecer a 1</button>
+            </br>
+    		<h2>Deslizamiento</h2>
+    	    <span>con tiempo dado: </span>
+            </br>
+            <button id='hacia_der'>-></button>
+            <button id='hacia_izq'><-</button>
+            <button id='hacia_abajo'>v</button>
+            <button id='hacia_arriba'>^</button>
+            <button id='der_y_abajo'>Anidadada -></button>
+            <button id='izq_y_arriba'>Anidadada <-</button>
+            <button id='stop'>Detener</button>
+		</div>
+	</section>
+	<section>
+		<h1>4. Agregar y Quitar Clases</h1>
+		<!-- radios, de unica seleccion -->
+		<input type="radio" checked id="rad" name="radio" value="add">Agregar</input>
+		<br>
+		<input type="radio"  name="radio" value="remover">Quitar</input>
+		</br>
+		</br>
+		<label for="clases_option">clases</label>
+		<select name="clases_option">
+			<option value="circulo">circulo</option>
+			<option value="borde">borde</option>
+			<option value="color">color</option>
+		</select>
+		</br>
+		<button type="input" class="ejecutar_clase" >Ejecutar</button>
+		<h3>Objeto</h3>
+		<div id="obj_para_clases"></div>
+	</section>
+	<section>
+		<h1>5. mostrar y ocultar elementos segun eleccion</h1>
+		<!-- radios, de unica seleccion -->
+		<input type="radio" checked id="elemnt" name="radio_elem" value="aves"></input>
+		<label>Mostrar aves</label>
+		<br>
+		<input type="radio"  name="radio_elem" value="peces"></input>
+		<label>Mostrar peces</label>
+		</br>
+		</br>
+		<div id="elemento_segun_eleccion_1" class="elemento_segun_eleccion">
+			<h3>Peces</h3>
+			<img class="img_ingr" src="imagenes/pez.jpg">
+		</div>
+		<div id="elemento_segun_eleccion_2" class="elemento_segun_eleccion">
+			<h3>aves</h3>
+			<img class="img_ingr" src="imagenes/aves.jpg">
+		</div>
+	</section>
+	<section>
+		<h1>6. Municipios y departamentos de forma dinamica</h1>
+		<!-- radios, de unica seleccion -->
+		<h3>Departamentos</h3>
+		<div class="">
+			<select id="departamentos" required="" name="elemeneto">
+				<option value="0">Selecione un departamento</option>
+			    <option value="1">Valle del Cuaca</option>
+			    <option value="2">Quindio</option>
+			    <option value="3">Antioquia</option>
+			</select>
+		</div>
+		<h3>Municipios</h3>
+		<div  class="">
+			<select id="municipios"  name="elemeneto">
+				<option value="">Selecione un municipio</option>
+				<option class="valle" value="">Cartago</option>
+				<option class="valle" value="">Obando</option>
+				<option class="valle" value="">Cali</option>
+				<option class="quindio" value="">Armenia</option>
+				<option class="quindio" value="">Salento</option>
+				<option class="quindio" value="">Finlandia</option>
+				<option class="antioquia" value="">Medellin</option>
+				<option class="antioquia" value="">Envigado</option>
+				<option class="antioquia" value="">La Estrella</option>
+			</select>
+		</div>
+	</section>
+	<section>
+		<h1>7. validar campos de un formulario con jquery</h1>
+		<!-- radios, de unica seleccion -->
+		<h3>Formulario de registro</h3>
+		<form action="#" id="formjquery">
+			<input type="text" name="nombre" id="nombre" value="" onBlur="validar();">
+			<span class="inicio" id="respuesta_nombre">Introduce tu nombre</span>
+			<div id="errores_nombre" class="error"></div>
+			<br>
+			<input type="text" name="correo" id="correo" value="" onBlur="validar();">
+			<span class="inicio" id="respuesta_correo">Introduce tu email</span>
+			<div id="errores_email" class="error"></div>
+			<br>
+			<input type="text" name="telefono" id="telefono" value="" onBlur="validar();">
+			<span class="inicio" id="respuesta_telefono">Introduce tu teléfono</span>
+			<div id="errores_telefono" class="error"></div>
+			<br>
+		</form>
+	</section>
+	<section>
+		<h1>10. Realizar calculadora interactiva con jquery </h1>
+		<!-- radios, de unica seleccion -->
+		<h3>Calculadora</h3>
+		<div class="fondo_calc">
+			<input type="text" value="" id="resultado">
+			<input class="boton_calc" type="button" value="1" id="1">
+			<input class="boton_calc" type="button" value="2" id="2">
+			<input class="boton_calc" type="button" value="3" id="3">
+			<input class="boton_calc" type="button" value="+" id="+"><br/>
+			<input class="boton_calc" type="button" value="4" id="4">
+			<input class="boton_calc" type="button" value="5" id="5">
+			<input class="boton_calc" type="button" value="6" id="6">
+			<input class="boton_calc" type="button" value="-" id="-"><br/>
+			<input class="boton_calc" type="button" value="7" id="7">
+			<input class="boton_calc" type="button" value="8" id="8">
+			<input class="boton_calc" type="button" value="9" id="9">
+			<input class="boton_calc" type="button" value="*" id="*"><br/>
+			<input class="boton_calc btn_c" type="button" value="C" id="C">
+			<input class="boton_calc" type="button" value="0" id="0">
+			<input class="boton_calc btn_igual" type="button" value="=" id="=">
+			<input class="boton_calc" type="button" value="/" id="/">
+		</div>
+	</section>
+
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/codigo.js"></script>
+</body>
+</html>

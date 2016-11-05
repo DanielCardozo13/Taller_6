@@ -1,0 +1,158 @@
+.div_colores{
+	width: 30px;
+	height: 30px;
+	border:solid 2px black;
+	margin-bottom: 10px;
+}
+section{
+	margin:0;
+	padding: 50px 0;
+}
+.rojo{
+	background-color: red;
+}
+
+.verde{
+	background-color: green;
+}
+
+.amarillo{
+	background-color: yellow;
+}
+
+.rosado{
+	background-color: pink;
+}
+
+.azul{
+	background-color: blue;
+}
+
+.blanco{
+	background-color: white;
+}
+
+.grupo_formu{
+	width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.medio_contenedor{
+	width: 49.8%;
+	display: inline-block;
+}
+
+.elemt_ingr{
+	border:solid 2px black;
+	width: 200px;
+	height: 200px;
+}
+
+.img_ingr{
+	width: 100%;
+	height: 100%;
+}
+
+
+.contenedor_elemento{
+	margin:3%;
+}
+.elementos_ingresados{
+	margin-top: 3%;
+	display: flex;
+}
+
+.circulo{
+	width: 50px;
+	height: 50px;
+	margin:4%;
+	border-radius: 50%;
+}
+
+.borde{
+	border: 2px solid black;
+}
+
+.color{
+	background-color: green;
+}
+
+.elemento_segun_eleccion{
+	width: 200px;
+	height: 200px;
+	display: none;
+}
+
+
+
+input {
+	margin:4px;
+	padding:4px;
+}
+.inicio {
+	color: black;
+	background: #EFEFEF;
+	border: 1px solid rgb(199, 199, 199);
+	padding: 4px 8px;
+	border-radius: 3px;
+}
+.ok {
+  color: black;
+  background: #B3FFBA;
+  border: 1px solid rgb(42, 155, 18);
+  padding: 4px 8px;
+  border-radius: 3px;
+}
+
+
+.error{
+	color: red;
+}
+
+#loading{
+	z-index: 3;
+}
+
+#content{
+	position:absolute;
+	text-align: center;
+	display: block;
+}
+
+#pre-load-web {width:100%;position:absolute;background:#92def8;left:0px;top:0px;z-index:100000}
+/*aqui centramos la imagen si coloco margin left -30 es por que la imagen mide 60 */
+#pre-load-web #imagen-load{left:50%;margin-left:-30px;position:absolute}
+
+
+.boton_calc{
+	padding:8px;
+	width  :30px;
+}
+
+#resultado{
+	height: 30px;
+	margin: 3% auto;
+	width: 80%;
+	background-color: #A3CBD3;
+}
+
+.btn_c{
+	background-color: red;
+	border-color: red;	 
+}
+
+.btn_igual{
+	background-color: #034004;
+	border-color: #034004;
+}
+
+.fondo_calc{
+	background-color: black;
+	width: 188px;
+	margin: 4%;
+	padding: 2%;
+}
